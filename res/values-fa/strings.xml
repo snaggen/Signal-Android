@@ -186,7 +186,6 @@
   <string name="CustomDefaultPreference_using_default">با استفاده از پیش فرض: %s</string>
   <string name="CustomDefaultPreference_none">هیچ کدام</string>
   <!--DateUtils-->
-  <string name="DateUtils_now">اکنون</string>
   <string name="DateUtils_minutes_ago">%d دقیقه</string>
   <!--DeviceListActivity-->
   <string name="DeviceListActivity_unlink_s">قطع ارتباط \'%s\'؟</string>
@@ -940,6 +939,7 @@
   <string name="text_secure_normal__mark_all_as_read">علامت همه به عنوان خوانده شده</string>
   <string name="text_secure_normal__invite_friends">دعوت دوستان</string>
   <string name="text_secure_normal__help">کمک</string>
+  <!--verify_display_fragment-->
   <!--reminder_header-->
   <string name="reminder_header_outdated_build">نسخه سیگنال شما قدیمی است.</string>
   <plurals name="reminder_header_outdated_build_details">

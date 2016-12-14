@@ -61,8 +61,6 @@
   <!--CallScreen-->
   <string name="CallScreen_Incoming_call">来电呼叫</string>
   <!--ConfirmIdentityDialog-->
-  <string name="ConfirmIdentityDialog_the_signature_on_this_key_exchange_is_different">%1$s 的安全码发生了改变。这可能是因为有人正在尝试截获你们的通讯，或者 %2$s 只是重新安装了暗号。</string>
-  <string name="ConfirmIdentityDialog_you_may_wish_to_verify_this_contact">您可能希望验证这个联系人的安全码。</string>
   <string name="ConfirmIdentityDialog_accept">接受</string>
   <!--ContactsDatabase-->
   <string name="ContactsDatabase_message_s">信息 %s</string>
@@ -120,7 +118,7 @@
   <string name="ConversationActivity_mms_not_supported_title">彩信不被支持</string>
   <string name="ConversationActivity_mms_not_supported_message">此信息无法发送，因为您的运营商不支持彩信。</string>
   <string name="ConversationActivity_specify_recipient">请选择一个联系人</string>
-  <string name="ConversationActivity_unblock_this_contact_question">解除此联系人的屏蔽？</string>
+  <string name="ConversationActivity_unblock_this_contact_question">解除对此联系人的屏蔽？</string>
   <string name="ConversationActivity_you_will_once_again_be_able_to_receive_messages_and_calls_from_this_contact">您将可以再次收到来自此联系人的信息和呼叫。</string>
   <string name="ConversationActivity_unblock">解除屏蔽</string>
   <string name="ConversationActivity_attachment_exceeds_size_limits">当前信息的附件类型已经已经超过大小限制。</string>
@@ -188,7 +186,6 @@
   <string name="CustomDefaultPreference_using_default">使用默认：%s</string>
   <string name="CustomDefaultPreference_none">没有</string>
   <!--DateUtils-->
-  <string name="DateUtils_now">现在</string>
   <string name="DateUtils_minutes_ago">%d 分钟</string>
   <!--DeviceListActivity-->
   <string name="DeviceListActivity_unlink_s">断开 \'%s\' ？</string>
@@ -225,7 +222,10 @@
   <string name="GcmRefreshJob_Permanent_Signal_communication_failure">暗号持续连接失效！</string>
   <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">暗号无法在 Google Play 服务中注册。暗号消息和呼叫已经被金庸。请尝试在设置 &gt; 高级中重新注册。</string>
   <!--GiphyActivity-->
+  <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">下载完整的 GIF 时发生错误…</string>
   <!--GiphyFragmentPageAdapter-->
+  <string name="GiphyFragmentPagerAdapter_gifs">GIF</string>
+  <string name="GiphyFragmentPagerAdapter_stickers">贴纸</string>
   <!--GroupCreateActivity-->
   <string name="GroupCreateActivity_actionbar_title">新群组</string>
   <string name="GroupCreateActivity_actionbar_update_title">更新群组</string>
@@ -298,7 +298,6 @@
   <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">暗号需要 条码扫描器 来扫描二维码。</string>
   <!--MessageDetailsRecipient-->
   <string name="MessageDetailsRecipient_failed_to_send">发送失败</string>
-  <string name="MessageDetailsRecipient_new_safety_numbers">新的安全码</string>
   <!--MmsDownloader-->
   <string name="MmsDownloader_error_storing_mms">存储彩信错误！</string>
   <string name="MmsDownloader_error_connecting_to_mms_provider">连接彩信服务器错误…</string>
@@ -323,7 +322,8 @@
   <string name="MessageRecord_called_s">已呼叫 %s</string>
   <string name="MessageRecord_missed_call_from">来自 %s 的未接来电</string>
   <string name="MessageRecord_s_is_on_signal_say_hey">%s 正在暗号中，打个招呼吧！</string>
-  <string name="MessageRecord_your_safety_numbers_with_s_have_changed">你与 %s 的安全码已经修改</string>
+  <string name="MessageRecord_you_set_disappearing_message_time_to_s">您将信息销毁时间设置为 %1$s</string>
+  <string name="MessageRecord_s_set_disappearing_message_time_to_s">%1$s 将消息销毁时间设置为 %2$s</string>
   <!--PassphraseChangeActivity-->
   <string name="PassphraseChangeActivity_passphrases_dont_match_exclamation">口令不符！</string>
   <string name="PassphraseChangeActivity_incorrect_old_passphrase_exclamation">旧密码不正确！</string>
@@ -450,7 +450,6 @@
   <string name="SmsMessageRecord_received_corrupted_key_exchange_message">收到损坏的密钥
 交换消息！</string>
   <string name="SmsMessageRecord_received_key_exchange_message_for_invalid_protocol_version">接收到的密钥交换信息来自不正确的协议版本。</string>
-  <string name="SmsMessageRecord_received_message_with_new_safety_numbers_tap_to_process">接受到了使用新的安全码的信息。点击以处理和显示。</string>
   <string name="SmsMessageRecord_secure_session_reset">您重置了安全会话。</string>
   <string name="SmsMessageRecord_secure_session_reset_s">%s 重置了安全会话</string>
   <string name="SmsMessageRecord_duplicate_message">重复的信息。</string>
@@ -464,11 +463,9 @@
   <string name="ThreadRecord_media_message">多媒体信息</string>
   <string name="ThreadRecord_s_is_on_signal_say_hey">%s 正在暗号中，打个招呼吧！</string>
   <string name="ThreadRecord_disappearing_message_time_updated_to_s">信息销毁时间设置为 %s</string>
-  <string name="ThreadRecord_your_safety_numbers_with_s_have_changed">你与 %s 的安全码已经修改</string>
   <!--VerifyIdentityActivity-->
-  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">您的联系人正在使用旧版本的暗号，请告诉他们更新到最新版本再验证安全码。</string>
-  <string name="VerifyIdentityActivity_you_re_attempting_to_verify_safety_numbers_with">您正在尝试验证与 %1$s 验证安全码，但是您却扫描了 %2$s 的验证码。</string>
-  <string name="VerifyIdentityActivity_the_scanned_qr_code_is_not_a_correctly_formatted_safety_number">扫描的 QR 码格式不正确。请重新扫一次。</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">您的联系人使用的是新版本的暗号，程序无法识别这个联系人的二维码。
+请升级您的暗号。</string>
   <string name="VerifyIdentityActivity_no_app_to_share_to">看起来您没有任何可以共享的应用。</string>
   <!--KeyExchangeInitiator-->
   <string name="KeyExchangeInitiator_initiate_despite_existing_request_question">发起一个已经存在的请求？</string>
@@ -615,7 +612,9 @@
   </plurals>
   <string name="expiration_weeks_abbreviated">%d 周</string>
   <!--giphy_activity-->
+  <string name="giphy_activity_toolbar__search_gifs_and_stickers">搜索 GIF 与贴纸</string>
   <!--giphy_fragment-->
+  <string name="giphy_fragment__nothing_found">什么也没找到</string>
   <!--log_submit_activity-->
   <string name="log_submit_activity__log_fetch_failed">无法在您的设备上读取日志。您仍然可以使用 ADB 来获得调试日志。</string>
   <string name="log_submit_activity__thanks">感谢！</string>
@@ -674,7 +673,6 @@
   <string name="recipient_preferences__block">屏蔽</string>
   <string name="recipient_preferences__color">颜色</string>
   <string name="recipient_preferences__color_for_this_contact">此联系人的颜色</string>
-  <string name="recipient_preferences__verify_safety_numbers">验证安全码</string>
   <!--- redphone_call_controls-->
   <string name="redphone_call_card__signal_call">暗号呼叫</string>
   <string name="redphone_call_controls__end_call">结束呼叫</string>
@@ -765,7 +763,6 @@
   <string name="AndroidManifest__select_contacts">选择联系人</string>
   <string name="AndroidManifest__signal_detected">已经检测到暗号</string>
   <string name="AndroidManifest__change_passphrase"> 修改密码</string>
-  <string name="AndroidManifest__verify_safety_numbers">验证安全码</string>
   <string name="AndroidManifest__log_submit">发送调试日志</string>
   <string name="AndroidManifest__media_preview">媒体预览</string>
   <string name="AndroidManifest__media_overview">所有图片</string>
@@ -981,6 +978,9 @@
   <string name="text_secure_normal__mark_all_as_read">全部标记为已读</string>
   <string name="text_secure_normal__invite_friends">邀请好友</string>
   <string name="text_secure_normal__help">帮助</string>
+  <!--verify_display_fragment-->
+  <string name="verify_display_fragment_context_menu__copy_to_clipboard">复制到剪切板</string>
+  <string name="verify_display_fragment_context_menu__compare_with_clipboard">与剪切板中的内容进行比较</string>
   <!--reminder_header-->
   <string name="reminder_header_outdated_build">您的暗号版本已经过期</string>
   <plurals name="reminder_header_outdated_build_details">
@@ -1012,6 +1012,7 @@
   <string name="MediaPreviewActivity_unssuported_media_type">不支持的媒体类型。</string>
   <!--media_preview-->
   <string name="media_preview__save_title">保存</string>
+  <string name="media_preview__forward_title">转发</string>
   <!--media_overview-->
   <string name="media_overview__save_all">保存全部</string>
   <!--media_preview_activity-->

@@ -94,7 +94,6 @@
   <string name="CustomDefaultPreference_using_default">Выкарыстоўваць стандартны: %s</string>
   <string name="CustomDefaultPreference_none">Не</string>
   <!--DateUtils-->
-  <string name="DateUtils_now">Зараз</string>
   <!--DeviceListActivity-->
   <!--DeviceListItem-->
   <!--ShareActivity-->
@@ -552,6 +551,7 @@
   <string name="text_secure_normal__menu_settings">Налады</string>
   <string name="text_secure_normal__menu_clear_passphrase">Заблакіраваць</string>
   <string name="text_secure_normal__mark_all_as_read">Пазначыць усе як прачытаныя</string>
+  <!--verify_display_fragment-->
   <!--reminder_header-->
   <!--MediaPreviewActivity-->
   <string name="MediaPreviewActivity_you">Вы</string>

@@ -184,7 +184,6 @@
   <string name="CustomDefaultPreference_using_default">Gunakan bawaan: %s</string>
   <string name="CustomDefaultPreference_none">Kosong</string>
   <!--DateUtils-->
-  <string name="DateUtils_now">Sekarang</string>
   <string name="DateUtils_minutes_ago">%d mnt</string>
   <!--DeviceListActivity-->
   <string name="DeviceListActivity_unlink_s">Buang kaitan \'%s\'?</string>
@@ -955,6 +954,7 @@ gagal
   <string name="text_secure_normal__mark_all_as_read">Tandai semua dibaca</string>
   <string name="text_secure_normal__invite_friends">Undang teman</string>
   <string name="text_secure_normal__help">Bantuan</string>
+  <!--verify_display_fragment-->
   <!--reminder_header-->
   <string name="reminder_header_outdated_build">Versi Signal Anda telah usang</string>
   <plurals name="reminder_header_outdated_build_details">

@@ -64,10 +64,6 @@
   <!--CallScreen-->
   <string name="CallScreen_Incoming_call">Inkommande samtal</string>
   <!--ConfirmIdentityDialog-->
-  <string name="ConfirmIdentityDialog_the_signature_on_this_key_exchange_is_different">Säkerhätssiffrorna för %1$s har ändrats. Detta kan antingen innebära att någon försöker
-avlyssna din kommunikation, eller att %2$s helt enkelt ominstallerade Signal.</string>
-  <string name="ConfirmIdentityDialog_you_may_wish_to_verify_this_contact">Du kan vilja verifiera
-säkerhetssiffror för denna kontakt.</string>
   <string name="ConfirmIdentityDialog_accept">Acceptera</string>
   <!--ContactsDatabase-->
   <string name="ContactsDatabase_message_s">Meddelande %s</string>
@@ -204,7 +200,6 @@ säkerhetssiffror för denna kontakt.</string>
   <string name="CustomDefaultPreference_using_default">Använder standard: %s</string>
   <string name="CustomDefaultPreference_none">Inga</string>
   <!--DateUtils-->
-  <string name="DateUtils_now">Nu</string>
   <string name="DateUtils_minutes_ago">%d min</string>
   <!--DeviceListActivity-->
   <string name="DeviceListActivity_unlink_s">Koppla bort \'%s\'?</string>
@@ -241,6 +236,7 @@ säkerhetssiffror för denna kontakt.</string>
   <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Permanent kommunikationsfel med Signal!</string>
   <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">Signal kunde inte registrera med Google Play-tjänster. Meddelanden och samtal med Signal har avaktiverats, vänligen försök återregistrera i inställningar &gt; Avancerat.</string>
   <!--GiphyActivity-->
+  <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Fel vid hämtning av GIF i full upplösning...</string>
   <!--GiphyFragmentPageAdapter-->
   <string name="GiphyFragmentPagerAdapter_gifs">GIF:ar</string>
   <string name="GiphyFragmentPagerAdapter_stickers">Stickers</string>
@@ -317,7 +313,6 @@ som inte finns i säkerhetskopian.</string>
   <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">Signal behöver Barcode Scanner för QR-koder.</string>
   <!--MessageDetailsRecipient-->
   <string name="MessageDetailsRecipient_failed_to_send">Misslyckades att skicka</string>
-  <string name="MessageDetailsRecipient_new_safety_numbers">Nya säkerhetsnummer</string>
   <!--MmsDownloader-->
   <string name="MmsDownloader_error_storing_mms">Fel vid lagring av MMS!</string>
   <string name="MmsDownloader_error_connecting_to_mms_provider">Fel vid anslutning till MMS-leverantör...</string>
@@ -342,7 +337,8 @@ som inte finns i säkerhetskopian.</string>
   <string name="MessageRecord_called_s">Ringde %s</string>
   <string name="MessageRecord_missed_call_from">Missat samtal från %s</string>
   <string name="MessageRecord_s_is_on_signal_say_hey">%s finns på Signal, skriv hej!</string>
-  <string name="MessageRecord_your_safety_numbers_with_s_have_changed">Dina säkerhetsnummer med %s har ändrats</string>
+  <string name="MessageRecord_you_set_disappearing_message_time_to_s">Du satte tiden för försvinnande meddelanden till %1$s.</string>
+  <string name="MessageRecord_s_set_disappearing_message_time_to_s">%1$s sätt tiden för försvinnande meddelanden till %2$s.</string>
   <!--PassphraseChangeActivity-->
   <string name="PassphraseChangeActivity_passphrases_dont_match_exclamation">Lösenorden matchar inte!</string>
   <string name="PassphraseChangeActivity_incorrect_old_passphrase_exclamation">Inkorrekt gammalt lösenord!</string>
@@ -467,7 +463,6 @@ Dubbelkolla att det här är ditt nummer! Vi ska nu verifiera det med ett SMS.</
 för nyckelutbyte!</string>
   <string name="SmsMessageRecord_received_key_exchange_message_for_invalid_protocol_version">
 Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
-  <string name="SmsMessageRecord_received_message_with_new_safety_numbers_tap_to_process">Tog emot meddelande med nya säkerhetsnummer. Tryck för att bearbeta och visa.</string>
   <string name="SmsMessageRecord_secure_session_reset">Du startar om den säkra sessionen.</string>
   <string name="SmsMessageRecord_secure_session_reset_s">%s startar om den säkra sessionen.</string>
   <string name="SmsMessageRecord_duplicate_message">Duplicerat meddelande.</string>
@@ -481,11 +476,8 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <string name="ThreadRecord_media_message">Mediameddelande</string>
   <string name="ThreadRecord_s_is_on_signal_say_hey">%s finns på Signal, skriv hej!</string>
   <string name="ThreadRecord_disappearing_message_time_updated_to_s">Tiden för självförstörande meddelanden satt till %s</string>
-  <string name="ThreadRecord_your_safety_numbers_with_s_have_changed">Dina säkerhetsnummer med %s har ändrats</string>
   <!--VerifyIdentityActivity-->
-  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Din kontakt använder en gammal version av Signal. Be kontakten att uppdatera innan du verifierar säkerhetsnummer.</string>
-  <string name="VerifyIdentityActivity_you_re_attempting_to_verify_safety_numbers_with">Du försöker att verifiera säkerhetsnummer med %1$s, men scannade %2$s istället.</string>
-  <string name="VerifyIdentityActivity_the_scanned_qr_code_is_not_a_correctly_formatted_safety_number">Den scannade QR-koden är inte en korrekt formaterad verifieringskod för säkerhetsnummer. Försök att scanna igen.</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Din kontakt kör en nyare version av Signal med ett inkompatibelt format på QR koden. Vänligen uppdatera för att jämföra.</string>
   <string name="VerifyIdentityActivity_no_app_to_share_to">Verkar som att du inte har några appar att dela till.</string>
   <!--KeyExchangeInitiator-->
   <string name="KeyExchangeInitiator_initiate_despite_existing_request_question">Påbörja ny nyckelutbytesförfrågan trots redan existerande?</string>
@@ -639,6 +631,7 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <!--giphy_activity-->
   <string name="giphy_activity_toolbar__search_gifs_and_stickers">Sök GIF-bilder och stickers</string>
   <!--giphy_fragment-->
+  <string name="giphy_fragment__nothing_found">Inget hittat</string>
   <!--log_submit_activity-->
   <string name="log_submit_activity__log_fetch_failed">Kunde inte läsa loggen från din enhet. Du kan fortfarande använda ADB för att få en logg.</string>
   <string name="log_submit_activity__thanks">Tack för din hjälp!</string>
@@ -698,7 +691,6 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <string name="recipient_preferences__block">Blockera</string>
   <string name="recipient_preferences__color">Färg</string>
   <string name="recipient_preferences__color_for_this_contact">Färg för denna kontakt</string>
-  <string name="recipient_preferences__verify_safety_numbers">Verifiera säkerhetsnummer</string>
   <!--- redphone_call_controls-->
   <string name="redphone_call_card__signal_call">Signalsamtal</string>
   <string name="redphone_call_controls__end_call">avsluta samtal</string>
@@ -781,7 +773,6 @@ Signal uppnådde tidsgränsen för SMS-verifiering.</string>
   <string name="AndroidManifest__select_contacts">Välj kontakter</string>
   <string name="AndroidManifest__signal_detected">Signal hittad</string>
   <string name="AndroidManifest__change_passphrase">Ändra lösenord</string>
-  <string name="AndroidManifest__verify_safety_numbers">Verifiera säkerhetsnummer</string>
   <string name="AndroidManifest__log_submit">Skicka in felsökningslogg</string>
   <string name="AndroidManifest__media_preview">Mediaförhandsgranskning</string>
   <string name="AndroidManifest__media_overview">Alla bilder</string>
@@ -998,6 +989,9 @@ Signal uppnådde tidsgränsen för SMS-verifiering.</string>
   <string name="text_secure_normal__mark_all_as_read">Markera alla lästa</string>
   <string name="text_secure_normal__invite_friends">Bjud in vänner</string>
   <string name="text_secure_normal__help">Hjälp</string>
+  <!--verify_display_fragment-->
+  <string name="verify_display_fragment_context_menu__copy_to_clipboard">Kopiera till urklipp</string>
+  <string name="verify_display_fragment_context_menu__compare_with_clipboard">Jämför med urklipp</string>
   <!--reminder_header-->
   <string name="reminder_header_outdated_build">Din version av Signal är urgammal</string>
   <plurals name="reminder_header_outdated_build_details">
@@ -1030,6 +1024,7 @@ Signal uppnådde tidsgränsen för SMS-verifiering.</string>
   <string name="MediaPreviewActivity_unssuported_media_type">Mediatypen stöds ej</string>
   <!--media_preview-->
   <string name="media_preview__save_title">Spara</string>
+  <string name="media_preview__forward_title">Vidarebefodra</string>
   <!--media_overview-->
   <string name="media_overview__save_all">Spara alla</string>
   <!--media_preview_activity-->
