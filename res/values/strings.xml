@@ -117,7 +117,7 @@
     <string name="ConversationActivity_message_is_empty_exclamation">Message is empty!</string>
     <string name="ConversationActivity_group_members">Group members</string>
     <string name="ConversationActivity_group_conversation">Group conversation</string>
-    <string name="ConversationActivity_unnamed_group">Unnamed group</string>
+
     <plurals name="ConversationActivity_d_recipients_in_group">
         <item quantity="one">1 member</item>
         <item quantity="other">%d members</item>
@@ -133,7 +133,7 @@
     <string name="ConversationActivity_transport_signal">Signal</string>
     <string name="ConversationActivity_lets_switch_to_signal">Let\'s switch to Signal %1$s</string>
     <string name="ConversationActivity_lets_use_this_to_chat">Let\'s use this to chat: %1$s</string>
-    <string name="ConversationActivity_error_leaving_group">Error leaving group...</string>
+    <string name="ConversationActivity_error_leaving_group">Error leaving group</string>
     <string name="ConversationActivity_mms_not_supported_title">MMS not supported</string>
     <string name="ConversationActivity_mms_not_supported_message">This message cannot be sent since your carrier doesn\'t support MMS.</string>
     <string name="ConversationActivity_specify_recipient">Please choose a contact</string>
@@ -143,7 +143,7 @@
     <string name="ConversationActivity_attachment_exceeds_size_limits">Attachment exceeds size limits for the type of message you\'re sending.</string>
     <string name="ConversationActivity_quick_camera_unavailable">Camera unavailable</string>
     <string name="ConversationActivity_unable_to_record_audio">Unable to record audio!</string>
-    <string name="ConversationActivity_error_sending_voice_message">Error sending voice message...</string>
+    <string name="ConversationActivity_error_sending_voice_message">Error sending voice message</string>
     <string name="ConversationActivity_there_is_no_app_available_to_handle_this_link_on_your_device">There is no app available to handle this link on your device.</string>
 
     <!-- ConversationFragment -->
@@ -167,7 +167,10 @@
         <item quantity="one">Error while saving attachment to storage!</item>
         <item quantity="other">Error while saving attachments to storage!</item>
     </plurals>
-    <string name="ConversationFragment_file_saved_successfully">File saved successfully.</string>
+    <plurals name="ConversationFragment_files_saved_successfully">
+        <item quantity="one">File saved successfully.</item>
+        <item quantity="other">Files saved successfully.</item>
+    </plurals>
     <string name="ConversationFragment_unable_to_write_to_sd_card_exclamation">Unable to write to storage!</string>
     <plurals name="ConversationFragment_saving_n_attachments">
         <item quantity="one">Saving attachment</item>
@@ -186,7 +189,7 @@
     <string name="ConversationFragment_deleting_messages">Deleting messages...</string>
 
     <!-- ConversationListActivity -->
-    <string name="ConversationListActivity_search">Search...</string>
+    <string name="ConversationListActivity_search">Search</string>
     <string name="ConversationListActivity_there_is_no_browser_installed_on_your_device">There is no browser installed on your device.</string>
 
     <!-- ConversationListFragment -->
@@ -211,7 +214,7 @@
     </plurals>
 
     <!-- ConversationListItem -->
-    <string name="ConversationListItem_key_exchange_message">Key exchange message...</string>
+    <string name="ConversationListItem_key_exchange_message">Key exchange message</string>
 
     <!-- ConversationListItemAction -->
     <string name="ConversationListItemAction_archived_conversations_d">Archived conversations (%d)</string>
@@ -224,11 +227,13 @@
     <!-- DateUtils -->
     <string name="DateUtils_just_now">Just now</string>
     <string name="DateUtils_minutes_ago">%d min</string>
+    <string name="DateUtils_today">Today</string>
+    <string name="DateUtils_yesterday">Yesterday</string>
 
     <!-- DeviceListActivity -->
     <string name="DeviceListActivity_unlink_s">Unlink \'%s\'?</string>
     <string name="DeviceListActivity_by_unlinking_this_device_it_will_no_longer_be_able_to_send_or_receive">By unlinking this device, it will no longer be able to send or receive messages.</string>
-    <string name="DeviceListActivity_network_connection_failed">Network connection failed...</string>
+    <string name="DeviceListActivity_network_connection_failed">Network connection failed</string>
     <string name="DeviceListActivity_try_again">Try again</string>
     <string name="DeviceListActivity_unlinking_device">Unlinking device...</string>
     <string name="DeviceListActivity_unlinking_device_no_ellipsis">Unlinking device</string>
@@ -266,7 +271,7 @@
 
 
     <!-- GiphyActivity -->
-    <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Error while retrieving full resolution GIF...</string>
+    <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Error while retrieving full resolution GIF</string>
 
     <!-- GiphyFragmentPageAdapter -->
     <string name="GiphyFragmentPagerAdapter_gifs">GIFs</string>
@@ -361,8 +366,8 @@
 
     <!-- MmsDownloader -->
     <string name="MmsDownloader_error_storing_mms">Error storing MMS!</string>
-    <string name="MmsDownloader_error_connecting_to_mms_provider">Error connecting to MMS provider...</string>
-    <string name="MmsDownloader_error_reading_mms_settings">Error reading wireless provider MMS settings...</string>
+    <string name="MmsDownloader_error_connecting_to_mms_provider">Error connecting to MMS provider</string>
+    <string name="MmsDownloader_error_reading_mms_settings">Error reading wireless provider MMS settings</string>
 
     <!--- NotificationBarManager -->
     <string name="NotificationBarManager_signal_call_in_progress">Signal call in progress</string>
@@ -377,6 +382,8 @@
 
     <!-- NotificationMmsMessageRecord -->
     <string name="NotificationMmsMessageRecord_multimedia_message">Multimedia message</string>
+    <string name="NotificationMmsMessageRecord_downloading_mms_message">Downloading MMS message</string>
+    <string name="NotificationMmsMessageRecord_error_downloading_mms_message">Error downloading MMS message, tap to retry</string>
 
     <!-- MessageRecord -->
     <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Received a message encrypted using an old version of Signal that is no longer supported. Please ask the sender to update to the most recent version and resend the message.</string>
@@ -412,7 +419,7 @@
     <string name="DeviceProvisioningActivity_content_progress_no_device">No device found.</string>
     <string name="DeviceProvisioningActivity_content_progress_network_error">Network error.</string>
     <string name="DeviceProvisioningActivity_content_progress_key_error">Invalid QR code.</string>
-    <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Sorry, you have too many devices linked already, try removing some...</string>
+    <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Sorry, you have too many devices linked already, try removing some</string>
     <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Sorry, this is not a valid device link QR code.</string>
     <string name="DeviceProvisioningActivity_link_a_signal_device">Link a Signal device?</string>
     <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">It looks like you\'re trying to link a Signal device using a 3rd party scanner.  For your protection, please scan the code again from within Signal.</string>
@@ -448,6 +455,10 @@
     <string name="RecipientPreferenceActivity_unblock">Unblock</string>
     <string name="RecipientPreferenceActivity_enabled">Enabled</string>
     <string name="RecipientPreferenceActivity_disabled">Disabled</string>
+    <string name="RecipientPreferenceActivity_available_once_a_message_has_been_sent_or_received">Available once a message has been sent or received.</string>
+
+    <!-- RecipientProvider -->
+    <string name="RecipientProvider_unnamed_group">Unnamed group</string>
 
     <!-- RedPhone -->
     <string name="RedPhone_answering">Answering</string>
@@ -503,7 +514,7 @@
     <string name="RegistrationProgressActivity_verifying_number">Verifying number</string>
     <string name="RegistrationProgressActivity_edit_s">Edit %s</string>
     <string name="RegistrationProgressActivity_registration_complete">Registration complete!</string>
-    <string name="RegistrationProgressActivity_you_must_enter_the_code_you_received_first">You must enter the code you received first...</string>
+    <string name="RegistrationProgressActivity_you_must_enter_the_code_you_received_first">You must enter the code you received first</string>
     <string name="RegistrationProgressActivity_connecting">Connecting</string>
     <string name="RegistrationProgressActivity_connecting_for_verification">Connecting for verification...</string>
     <string name="RegistrationProgressActivity_network_error">Network error!</string>
@@ -545,7 +556,7 @@
     <string name="SmsMessageRecord_duplicate_message">Duplicate message.</string>
 
     <!-- ThreadRecord -->
-    <string name="ThreadRecord_left_the_group">Left the group...</string>
+    <string name="ThreadRecord_left_the_group">Left the group</string>
     <string name="ThreadRecord_secure_session_reset">Secure session reset.</string>
     <string name="ThreadRecord_draft">Draft:</string>
     <string name="ThreadRecord_called">You called</string>
@@ -557,7 +568,7 @@
     <string name="ThreadRecord_your_safety_number_with_s_has_changed">Your safety number with %s has changed.</string>
 
     <!-- VerifyIdentityActivity -->
-    <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Your contact is running an old version of Signal, please ask them to update before verifying your safety number.</string>
+    <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Your contact is running an old version of Signal. Please ask them to update before verifying your safety number.</string>
     <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Your contact is running a newer version of Signal with an incompatible QR code format. Please update to compare.</string>
     <string name="VerifyIdentityActivity_the_scanned_qr_code_is_not_a_correctly_formatted_safety_number">The scanned QR code is not a correctly formatted safety number verification code. Please try scanning again.</string>
     <string name="VerifyIdentityActivity_share_safety_number_via">Share safety number via...</string>
@@ -570,9 +581,9 @@
     <string name="KeyExchangeInitiator_send">Send</string>
 
     <!-- MessageDisplayHelper -->
-    <string name="MessageDisplayHelper_bad_encrypted_message">Bad encrypted message...</string>
+    <string name="MessageDisplayHelper_bad_encrypted_message">Bad encrypted message</string>
     <string name="MessageDisplayHelper_decrypting_please_wait">Decrypting, please wait...</string>
-    <string name="MessageDisplayHelper_message_encrypted_for_non_existing_session">Message encrypted for non-existing session...</string>
+    <string name="MessageDisplayHelper_message_encrypted_for_non_existing_session">Message encrypted for non-existing session</string>
 
     <!-- EncryptingSmsDatabase -->
     <string name="EncryptingSmsDatabase_error_decrypting_message">Error decrypting message.</string>
@@ -590,8 +601,8 @@
 
     <!-- MmsMessageRecord -->
     <string name="MmsMessageRecord_decrypting_mms_please_wait">Decrypting MMS, please wait...</string>
-    <string name="MmsMessageRecord_bad_encrypted_mms_message">Bad encrypted MMS message...</string>
-    <string name="MmsMessageRecord_mms_message_encrypted_for_non_existing_session">MMS message encrypted for non-existing session...</string>
+    <string name="MmsMessageRecord_bad_encrypted_mms_message">Bad encrypted MMS message</string>
+    <string name="MmsMessageRecord_mms_message_encrypted_for_non_existing_session">MMS message encrypted for non-existing session</string>
 
     <!-- MuteDialog -->
     <string name="MuteDialog_mute_notifications">Mute notifications</string>
@@ -611,7 +622,7 @@
     <!-- MessageNotifier -->
     <string name="MessageNotifier_d_new_messages_in_d_conversations">%1$d new messages in %2$d conversations</string>
     <string name="MessageNotifier_most_recent_from_s">Most recent from: %1$s</string>
-    <string name="MessageNotifier_locked_message">Locked message...</string>
+    <string name="MessageNotifier_locked_message">Locked message</string>
     <string name="MessageNotifier_media_message_with_text">Media message: %s</string>
     <string name="MessageNotifier_no_subject">(No subject)</string>
     <string name="MessageNotifier_message_delivery_failed">Message delivery failed.</string>
@@ -632,11 +643,20 @@
 
     <!-- attachment_type_selector -->
     <string name="attachment_type_selector__image">Image</string>
+    <string name="attachment_type_selector__image_description">Image</string>
     <string name="attachment_type_selector__audio">Audio</string>
+    <string name="attachment_type_selector__audio_description">Audio</string>
     <string name="attachment_type_selector__video">Video</string>
+    <string name="attachment_type_selector__video_description">Video</string>
     <string name="attachment_type_selector__contact">Contact</string>
+    <string name="attachment_type_selector__contact_description">Contact</string>
     <string name="attachment_type_selector__camera">Camera</string>
+    <string name="attachment_type_selector__camera_description">Camera</string>
     <string name="attachment_type_selector__location">Location</string>
+    <string name="attachment_type_selector__location_description">Location</string>
+    <string name="attachment_type_selector__gif">GIF</string>
+    <string name="attachment_type_selector__gif_description">Gif</string>
+    <string name="attachment_type_selector__drawer_description">Toggle attachment drawer</string>
 
     <!-- change_passphrase_activity -->
     <string name="change_passphrase_activity__old_passphrase">Old passphrase</string>
@@ -657,7 +677,7 @@
     <string name="ContactSelectionlistFragment_select_for">Select for</string>
 
     <!-- blocked_contacts_fragment -->
-    <string name="blocked_contacts_fragment__no_blocked_contacts">No blocked contacts...</string>
+    <string name="blocked_contacts_fragment__no_blocked_contacts">No blocked contacts</string>
 
     <!-- contact_selection_recent_activity -->
     <string name="contact_selection_recent_activity__no_recent_calls">No recent calls.</string>
@@ -700,9 +720,17 @@
     <string name="conversation_item_received__contact_photo_description">Contact photo</string>
     <string name="conversation_item_received__downloading">Downloading</string>
 
+    <!-- audio_view -->
+    <string name="audio_view__play_accessibility_description">Play</string>
+    <string name="audio_view__pause_accessibility_description">Pause</string>
+    <string name="audio_view__download_accessibility_description">Download</string>
+
     <!-- conversation_fragment_cab -->
     <string name="conversation_fragment_cab__batch_selection_mode">Batch selection mode</string>
     <string name="conversation_fragment_cab__batch_selection_amount">%s selected</string>
+
+    <!-- conversation_fragment -->
+    <string name="conversation_fragment__scroll_to_the_bottom_content_description">Scroll to the bottom</string>
 
     <!-- country_selection_fragment -->
     <string name="country_selection_fragment__loading_countries">Loading countries...</string>
@@ -715,7 +743,7 @@
     <string name="device_link_fragment__link_device">Link device</string>
 
     <!-- device_list_fragment -->
-    <string name="device_list_fragment__no_devices_linked">No devices linked...</string>
+    <string name="device_list_fragment__no_devices_linked">No devices linked</string>
     <string name="device_list_fragment__link_new_device">Link new device</string>
 
     <!-- experience_upgrade_activity -->
